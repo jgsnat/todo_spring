@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.1.6.RELEASE'
 	id 'java'
 	id 'war'
+	id 'org.joinfaces' version '4.0.6'
 }
 
 apply plugin: 'io.spring.dependency-management'
@@ -20,4 +21,5 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile 'org.joinfaces:jsf-spring-boot-starter'	
 }
