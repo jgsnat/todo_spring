@@ -2,7 +2,9 @@
 
 Uso:
     - Antes de rodar o projeto criar um banco de dados com o nome todo, ou alterar o arquivo: `src/resources/application.properties`;
+    
     - Do desafio foram feitos os seguintes itens:
+    
         - A. Criar uma aplicação java web utilizando JavaServer Faces (JSF);
         - B. Utilizar persistência em um banco de dados (qualquer banco desejado);
         - C. Utilizar Hibernate e JPA;
