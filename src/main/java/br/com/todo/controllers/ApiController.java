@@ -3,6 +3,7 @@ package br.com.todo.controllers;
 import java.util.List;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import br.com.todo.persistence.entity.Todo;
 import br.com.todo.persistence.repository.TodoRepository;
 import br.com.todo.utils.TodoNotFoundException;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/api")
 public class ApiController {
@@ -59,6 +61,7 @@ public class ApiController {
 	}
 	
 	@DeleteMapping(value = "/{id}")
+	@ResponseStatus(HttpStatus.OK)
 	void delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
